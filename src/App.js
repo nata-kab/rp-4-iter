@@ -1,5 +1,6 @@
 import { ThemeProvider, Global, css } from "@emotion/react";
 import Typography from "./components/Typography";
+import Card from "./recipes/Card";
 import theme from "./theme";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           `}
         />
         <Typography variant="h1">Hello</Typography>
+        <Card title="Breakfast" />
       </ThemeProvider>
     </>
   );
