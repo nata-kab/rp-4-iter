@@ -31,45 +31,67 @@ const theme = {
   typography: {
     desktop: {
       h1: {
-        fontWeight: 400,
-        fontSize: "40px",
-        lineHeight: "120%",
+        fontWeight: 500,
+        fontSize: "2.7rem",
+        lineHeight: "150%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "32px",
-        lineHeight: "100%",
+        fontSize: "2.9rem",
+        lineHeight: "110%",
         fontFamily: "Roboto",
       },
 
-      bodySmall: {
+      bodyMediumBold: {
+        fontWeight: 500,
+        fontSize: "2rem",
+        lineHeight: "110%",
+        fontFamily: "Roboto",
+      },
+    },
+    tablet: {
+      h1: {
+        fontWeight: 500,
+        fontSize: "2rem",
+        lineHeight: "150%",
+        fontFamily: "Roboto",
+      },
+
+      bodyLarge: {
         fontWeight: 300,
-        fontSize: "22px",
-        lineHeight: "100%",
+        fontSize: "2.1rem",
+        lineHeight: "110%",
+        fontFamily: "Roboto",
+      },
+
+      bodyMediumBold: {
+        fontWeight: 500,
+        fontSize: "1.7rem",
+        lineHeight: "110%",
         fontFamily: "Roboto",
       },
     },
 
     mobile: {
       h1: {
-        fontWeight: 400,
-        fontSize: "30px",
-        lineHeight: "100%",
+        fontWeight: 500,
+        fontSize: "1.5rem",
+        lineHeight: "150%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "32px",
-        lineHeight: "100%",
+        fontSize: "1.7rem",
+        lineHeight: "110%",
         fontFamily: "Roboto",
       },
-      bodySmall: {
-        fontWeight: 300,
-        fontSize: "22px",
-        lineHeight: "100%",
+      bodyMediumBold: {
+        fontWeight: 500,
+        fontSize: "1rem",
+        lineHeight: "110%",
         fontFamily: "Roboto",
       },
     },

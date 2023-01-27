@@ -1,9 +1,7 @@
-import { string, oneOf, node } from "prop-types";
+import { string, oneOf } from "prop-types";
 import React from "react";
-import { useTheme } from "@emotion/react";
 
 import * as Styled from "./Typography.styled";
-import theme from "../../theme";
 
 const variants = {
   h1: "h1",
@@ -14,7 +12,6 @@ const variants = {
 };
 
 const Typography = ({ variant, color, children, letterSpacing }) => {
-  const theme = useTheme();
   return (
     <Styled.Typography
       as={variants[variant]}

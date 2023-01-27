@@ -17,12 +17,17 @@ const Card = ({
 }) => {
   const theme = useTheme();
   return (
+    // <Styled.Wrapper>
     <Styled.Card>
       <Styled.ImageContainer>
         <Styled.Image src={imageSrc} alt={imageAlt} />
       </Styled.ImageContainer>
-      <Styled.ContentContainer>
-        <Typography variant="h1" color={theme.colors.pink[100]}>
+      <Styled.Content>
+        <Typography
+          variant="h1"
+          color={theme.colors.pink[100]}
+          letterSpacing={0.1}
+        >
           {title.toUpperCase()}
         </Typography>
         <Typography variant="bodyLarge" color={theme.colors.blue[100]}>
@@ -33,8 +38,9 @@ const Card = ({
           colorVariant={colorVariant}
           onClick={onClick}
         />
-      </Styled.ContentContainer>
+      </Styled.Content>
     </Styled.Card>
+    // </Styled.Wrapper>
   );
 };
 
