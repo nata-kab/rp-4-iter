@@ -54,21 +54,21 @@ const theme = {
     tablet: {
       h1: {
         fontWeight: 500,
-        fontSize: "2rem",
+        fontSize: "2.2rem",
         lineHeight: "150%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "2.1rem",
+        fontSize: "2.4rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
 
       bodyMediumBold: {
         fontWeight: 500,
-        fontSize: "1.7rem",
+        fontSize: "1.9rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
@@ -77,20 +77,20 @@ const theme = {
     mobile: {
       h1: {
         fontWeight: 500,
-        fontSize: "1.5rem",
+        fontSize: "1.6rem",
         lineHeight: "150%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "1.7rem",
+        fontSize: "1.8rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
       bodyMediumBold: {
         fontWeight: 500,
-        fontSize: "1rem",
+        fontSize: "1.3rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },

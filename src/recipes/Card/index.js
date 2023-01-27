@@ -17,7 +17,6 @@ const Card = ({
 }) => {
   const theme = useTheme();
   return (
-    // <Styled.Wrapper>
     <Styled.Card>
       <Styled.ImageContainer>
         <Styled.Image src={imageSrc} alt={imageAlt} />
@@ -40,7 +39,6 @@ const Card = ({
         />
       </Styled.Content>
     </Styled.Card>
-    // </Styled.Wrapper>
   );
 };
 

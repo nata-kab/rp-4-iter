@@ -1,8 +1,8 @@
 import { ThemeProvider, Global, css } from "@emotion/react";
-import Typography from "./components/Typography";
 import Card from "./recipes/Card";
 import theme from "./theme";
 import * as Styled from "./App.styled";
+import Container from "./components/Container";
 
 function App() {
   return (
@@ -20,26 +20,19 @@ function App() {
             }
           `}
         />
-        <Styled.Container>
-          <Card
-            title="Breakfast"
-            imageSrc={
-              "https://img.delicious.com.au/bQjDG77i/del/2021/07/spiced-peanut-butter-and-honey-pancakes-with-blackberry-cream-155151-2.jpg"
-            }
-            description="Crazy breakfast! Are fun and melts in your mouth thing!"
-            buttonText="Looks yummy, want some"
-            colorVariant="pink"
-          />
-          <Card
-            title="Breakfast"
-            imageSrc={
-              "https://img.delicious.com.au/bQjDG77i/del/2021/07/spiced-peanut-butter-and-honey-pancakes-with-blackberry-cream-155151-2.jpg"
-            }
-            description="Crazy breakfast! Are fun and melts in your mouth thing!"
-            buttonText="Looks yummy, want some"
-            colorVariant="pink"
-          />
-        </Styled.Container>
+        <Styled.App>
+          <Container size={800}>
+            <Card
+              title="Breakfast"
+              imageSrc={
+                "https://cdn.pixabay.com/photo/2016/11/06/23/16/breakfast-1804436_960_720.jpg"
+              }
+              description="Crazy breakfast! Are fun and melts in your mouth thing!"
+              buttonText="Looks yummy, want some"
+              colorVariant="pink"
+            />
+          </Container>
+        </Styled.App>
       </ThemeProvider>
     </>
   );
