@@ -1,7 +1,9 @@
 import { string, oneOf, node } from "prop-types";
 import React from "react";
+import { useTheme } from "@emotion/react";
 
 import * as Styled from "./Typography.styled";
+import theme from "../../theme";
 
 const variants = {
   h1: "h1",
@@ -11,9 +13,15 @@ const variants = {
   bodySmall: "p",
 };
 
-const Typography = ({ variant, color, children }) => {
+const Typography = ({ variant, color, children, letterSpacing }) => {
+  const theme = useTheme();
   return (
-    <Styled.Typography as={variants[variant]} variant={variant} color={color}>
+    <Styled.Typography
+      as={variants[variant]}
+      variant={variant}
+      color={color}
+      letterSpacing={letterSpacing}
+    >
       {children}
     </Styled.Typography>
   );
@@ -22,13 +30,14 @@ const Typography = ({ variant, color, children }) => {
 Typography.propTypes = {
   variant: oneOf(Object.keys(variants)),
   color: string,
-  children: node,
+  children: string,
+  letterSpacing: string,
 };
 
 Typography.defaultProps = {
-  color: null,
-  children: null,
+  color: "black",
   variant: "bodyLarge",
+  letterSpacing: null,
 };
 
 export default Typography;

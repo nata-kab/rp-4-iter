@@ -9,65 +9,68 @@ const getBreakpoints = (bp) => {
 };
 
 const theme = {
-  // fontStyles: {
-  //   primaryFontFamily: "",
-  // },
+  fontStyles: {
+    primaryFontFamily: "'Roboto', sans-serif",
+  },
   colors: {
-    primary: {
-      100: "#FCDDDF",
-    },
     neutrals: {
-      100: "#FFFEFE",
+      100: "#FFFFFF",
     },
     grey: {
-      100: "#EBEBEB",
-      600: "#020202",
+      100: "#E8E8E8",
+      200: "#020202",
+    },
+    blue: {
+      100: "#33558b",
+    },
+    pink: {
+      100: "#ff4967",
     },
   },
 
   typography: {
     desktop: {
       h1: {
-        fontWeight: 300,
+        fontWeight: 400,
         fontSize: "40px",
-        lineHeight: "100%",
-        // fontFamily: ,
+        lineHeight: "120%",
+        fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
         fontSize: "32px",
         lineHeight: "100%",
-        // fontFamily: ,
+        fontFamily: "Roboto",
       },
 
       bodySmall: {
         fontWeight: 300,
         fontSize: "22px",
         lineHeight: "100%",
-        // fontFamily: ,
+        fontFamily: "Roboto",
       },
     },
 
     mobile: {
       h1: {
-        fontWeight: 300,
+        fontWeight: 400,
         fontSize: "30px",
         lineHeight: "100%",
-        // fontFamily: ,
+        fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
         fontSize: "32px",
         lineHeight: "100%",
-        // fontFamily: ,
+        fontFamily: "Roboto",
       },
       bodySmall: {
         fontWeight: 300,
         fontSize: "22px",
         lineHeight: "100%",
-        // fontFamily: ,
+        fontFamily: "Roboto",
       },
     },
   },

@@ -1,40 +1,62 @@
 import React from "react";
-import { string, node } from "prop-types";
+import { string, node, func, oneOf } from "prop-types";
+import { useTheme } from "@emotion/react";
 
 import * as Styled from "./Card.styled";
 import Typography from "../../components/Typography";
-import Image from "../../components/Image";
+import Button from "../../components/Button";
 
 const Card = ({
-  href,
   imageSrc,
   imageAlt,
   title,
   description,
-  button,
-  children,
+  buttonText,
+  colorVariant,
+  onClick,
 }) => {
+  const theme = useTheme();
   return (
-    <Styled.Card as={href ? `a` : `button`} href={href}>
-      <Image src={imageSrc} alt={imageAlt} />
-      <Typography variant="h1">{title}</Typography>
-      <Typography variant="bodyLarge">{description}</Typography>
-      {children}
+    <Styled.Card>
+      <Styled.ImageContainer>
+        <Styled.Image src={imageSrc} alt={imageAlt} />
+      </Styled.ImageContainer>
+      <Styled.ContentContainer>
+        <Typography variant="h1" color={theme.colors.pink[100]}>
+          {title.toUpperCase()}
+        </Typography>
+        <Typography variant="bodyLarge" color={theme.colors.blue[100]}>
+          {description}
+        </Typography>
+        <Button
+          text={buttonText}
+          colorVariant={colorVariant}
+          onClick={onClick}
+        />
+      </Styled.ContentContainer>
     </Styled.Card>
   );
 };
 
 Card.propTypes = {
-  title: string,
+  title: string.isRequired,
+  description: string,
   children: node,
   href: string,
+  onClick: func,
   imageAlt: string,
   imageSrc: string,
+  buttonText: string,
+  colorVariant: oneOf(["pink"]),
 };
 
 Card.defaultProps = {
   children: null,
+  colorVariant: "pink",
+  description: null,
+  buttonText: null,
   href: null,
+  onClick: null,
   imageAlt: null,
   imageSrc:
     "https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
