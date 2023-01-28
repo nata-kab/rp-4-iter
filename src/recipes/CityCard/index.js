@@ -1,22 +1,25 @@
 import React from "react";
-import { string, node, func, oneOf } from "prop-types";
+import { string, node } from "prop-types";
 
 import * as Styled from "./CityCardStyle";
 import Typography from "../../components/Typography";
-import Button from "../../components/Button";
+import { useTheme } from "@emotion/react";
 
-const CityCard = ({
-  imageSrc,
-  imageAlt,
-  title,
-  description,
-  buttonText,
-  colorVariant,
-  onClick,
-}) => {
+const CityCard = ({ title, imageSrc, href, imageAlt, button }) => {
+  const theme = useTheme();
   return (
-    <Styled.Card>
+    <Styled.Card as={href ? `a` : `div`}>
       <Styled.Image src={imageSrc} alt={imageAlt} />
+      <Styled.TitleContainer>
+        <Typography
+          variant="h1"
+          color={theme.colors.neutrals[100]}
+          letterSpacing={-0.02}
+        >
+          {title}
+        </Typography>
+      </Styled.TitleContainer>
+      <Styled.ButtonContainer>{button && button}</Styled.ButtonContainer>
     </Styled.Card>
   );
 };
@@ -26,13 +29,13 @@ CityCard.propTypes = {
   button: node,
   imageAlt: string,
   imageSrc: string,
+  href: string,
 };
 
 CityCard.defaultProps = {
+  image: null,
   button: null,
-  imageAlt: null,
-  imageSrc:
-    "https://cdn.pixabay.com/photo/2021/09/07/17/26/sultan-ahmet-mosque-6604492_960_720.jpg",
+  href: null,
 };
 
 export default CityCard;

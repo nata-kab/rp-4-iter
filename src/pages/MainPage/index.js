@@ -4,6 +4,7 @@ import Container from "../../components/Container";
 import mealCardData from "../../helpers/mealCardData";
 import cityCardData from "../../helpers/cityCardData";
 import CityCard from "../../recipes/CityCard";
+import Button from "../../components/Button";
 
 const MainPage = () => {
   return (
@@ -16,8 +17,15 @@ const MainPage = () => {
             imageSrc={item.imageSrc}
             imageAlt={item.imageAlt}
             description={item.description}
-            buttonText="Looks yummy, want some"
             colorVariant={item.colorVariant}
+            button={
+              <Button
+                text="Looks yummy, want some"
+                colorVariant={item.colorVariant}
+                textVariant="bodyMediumBold"
+                letterSpacing={-0.03}
+              />
+            }
           />
         ))}
       </Container>
@@ -29,6 +37,14 @@ const MainPage = () => {
             title={item.title}
             imageSrc={item.imageSrc}
             imageAlt={item.imageAlt}
+            button={
+              <Button
+                text="DOWNLOAD ITINERARY"
+                colorVariant={item.colorVariant}
+                textVariant="bodyLargeBold"
+                letterSpacing={-0.01}
+              />
+            }
           />
         ))}
       </Container>

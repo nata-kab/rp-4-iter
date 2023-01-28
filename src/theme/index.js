@@ -22,6 +22,8 @@ const theme = {
     },
     blue: {
       100: "#33558b",
+      200: "#3f51b5",
+      300: "#008688",
     },
     pink: {
       100: "#ff4967",
@@ -32,11 +34,20 @@ const theme = {
     yellow: {
       100: "#ffa726",
     },
+    red: {
+      100: "#fe6e4b",
+    },
   },
 
   typography: {
     desktop: {
       h1: {
+        fontWeight: 900,
+        fontSize: "2.3rem",
+        lineHeight: "110%",
+        fontFamily: "Roboto",
+      },
+      h2: {
         fontWeight: 500,
         fontSize: "1.3rem",
         lineHeight: "110%",
@@ -45,6 +56,12 @@ const theme = {
 
       bodyLarge: {
         fontWeight: 300,
+        fontSize: "1.4rem",
+        lineHeight: "110%",
+        fontFamily: "Roboto",
+      },
+      bodyLargeBold: {
+        fontWeight: 700,
         fontSize: "1.4rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
@@ -59,6 +76,12 @@ const theme = {
     },
     tablet: {
       h1: {
+        fontWeight: 900,
+        fontSize: "1.6rem",
+        lineHeight: "150%",
+        fontFamily: "Roboto",
+      },
+      h2: {
         fontWeight: 500,
         fontSize: "1rem",
         lineHeight: "150%",
@@ -68,6 +91,12 @@ const theme = {
       bodyLarge: {
         fontWeight: 300,
         fontSize: "1.1rem",
+        lineHeight: "110%",
+        fontFamily: "Roboto",
+      },
+      bodyLargeBold: {
+        fontWeight: 700,
+        fontSize: "1rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
@@ -83,6 +112,12 @@ const theme = {
     mobile: {
       h1: {
         fontWeight: 500,
+        fontSize: "1.4rem",
+        lineHeight: "150%",
+        fontFamily: "Roboto",
+      },
+      h2: {
+        fontWeight: 500,
         fontSize: "0.8rem",
         lineHeight: "150%",
         fontFamily: "Roboto",
@@ -90,6 +125,12 @@ const theme = {
 
       bodyLarge: {
         fontWeight: 300,
+        fontSize: "0.9rem",
+        lineHeight: "110%",
+        fontFamily: "Roboto",
+      },
+      bodyLargeBold: {
+        fontWeight: 700,
         fontSize: "0.9rem",
         lineHeight: "110%",
         fontFamily: "Roboto",

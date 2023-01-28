@@ -5,13 +5,15 @@ const cityCardData = [
     imageSrc:
       "https://cdn.pixabay.com/photo/2021/09/07/17/26/sultan-ahmet-mosque-6604492_960_720.jpg",
     imageAlt: "Istanbul",
+    colorVariant: "darkBlue",
   },
   {
     id: 11,
     title: "Moscow",
     imageSrc:
-      "https://cdn.pixabay.com/photo/2016/02/14/11/39/russia-1199330_960_720.jpg",
+      "https://cdn.pixabay.com/photo/2017/09/12/15/36/moscow-2742642_960_720.jpg",
     imageAlt: "Moscow",
+    colorVariant: "red",
   },
   {
     id: 12,
@@ -19,6 +21,7 @@ const cityCardData = [
     imageSrc:
       "https://cdn.pixabay.com/photo/2014/11/22/09/07/the-national-palace-museum-541501_960_720.jpg",
     imageAlt: "Beijing",
+    colorVariant: "aqua",
   },
 ];
 

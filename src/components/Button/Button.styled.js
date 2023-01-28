@@ -14,7 +14,20 @@ const colors = {
     mainColor: theme.colors.yellow[100],
     textColor: theme.colors.neutrals[100],
   },
+  red: {
+    mainColor: theme.colors.red[100],
+    textColor: theme.colors.neutrals[100],
+  },
+  darkBlue: {
+    mainColor: theme.colors.blue[200],
+    textColor: theme.colors.neutrals[100],
+  },
+  aqua: {
+    mainColor: theme.colors.blue[300],
+    textColor: theme.colors.neutrals[100],
+  },
 };
+
 export const Button = styled.a`
   display: inline-flex;
   flex-direction: row;
@@ -26,17 +39,12 @@ export const Button = styled.a`
   padding: 1.2rem 2.2rem;
   border: none;
   background-color: ${({ colorVariant }) => colors[colorVariant].mainColor};
-  letter-spacing: -0.03em;
-`;
-
-export const ButtonText = styled.span`
-  color: ${({ colorVariant }) => colors[colorVariant].textColor};
-  ${({ theme }) => theme.typography.desktop.bodyMediumBold};
-
   ${({ theme }) => theme.breakpoints.lg} {
-    ${({ theme, variant }) => theme.typography.tablet.bodyMediumBold}
+    padding: 1rem 1.5rem;
+    margin: 0 0.5rem;
   }
   ${({ theme }) => theme.breakpoints.sm} {
-    ${({ theme, variant }) => theme.typography.mobile.bodyMediumBold}
+    padding: 0.6rem 0.8rem;
+    margin: 0 0.04rem;
   }
 `;

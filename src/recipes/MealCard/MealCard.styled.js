@@ -15,6 +15,7 @@ export const ImageContainer = styled.div`
 export const Image = styled.img`
   display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
 `;
 
@@ -27,7 +28,7 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: inherit;
-  padding: 2.7rem 2.5rem;
+  padding: 2.5rem 2.2rem;
   border-radius: 0 0 40px 40px;
   gap: 1.5rem;
   ${({ theme }) => theme.breakpoints.lg} {

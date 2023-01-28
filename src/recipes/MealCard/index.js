@@ -4,26 +4,25 @@ import { useTheme } from "@emotion/react";
 
 import * as Styled from "./MealCard.styled";
 import Typography from "../../components/Typography";
-import Button from "../../components/Button";
 
 const MealCard = ({
   imageSrc,
   imageAlt,
   title,
   description,
-  buttonText,
   colorVariant,
-  onClick,
+  href,
+  button,
 }) => {
   const theme = useTheme();
   return (
-    <Styled.Card>
+    <Styled.Card as={href ? `a` : `div`} link={!!href}>
       <Styled.ImageContainer>
         <Styled.Image src={imageSrc} alt={imageAlt} />
       </Styled.ImageContainer>
       <Styled.Content>
         <Typography
-          variant="h1"
+          variant="h2"
           color={theme.colors[colorVariant][100]}
           letterSpacing={0.06}
         >
@@ -34,13 +33,9 @@ const MealCard = ({
           color={theme.colors.blue[100]}
           letterSpacing={0.01}
         >
-          {description} Are fun and &#10; melts in your mouth thing!
+          {description} Are fun and melts in your mouth thing!
         </Typography>
-        <Button
-          text={buttonText}
-          colorVariant={colorVariant}
-          onClick={onClick}
-        />
+        {button && button}
       </Styled.Content>
     </Styled.Card>
   );
@@ -54,17 +49,17 @@ MealCard.propTypes = {
   onClick: func,
   imageAlt: string,
   imageSrc: string,
-  buttonText: string,
   colorVariant: oneOf(["pink", "green", "yellow"]),
+  button: node,
 };
 
 MealCard.defaultProps = {
   children: null,
   colorVariant: "pink",
   description: null,
-  buttonText: null,
   href: null,
   onClick: null,
+  button: null,
   imageAlt: null,
   imageSrc:
     "https://cdn.pixabay.com/photo/2017/03/31/18/02/strawberry-dessert-2191973_960_720.jpg",

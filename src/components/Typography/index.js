@@ -6,9 +6,9 @@ import * as Styled from "./Typography.styled";
 const variants = {
   h1: "h1",
   h2: "h2",
-  h3: "h3",
   bodyLarge: "p",
-  bodySmall: "p",
+  bodyLargeBold: "p",
+  bodyMediumBold: "p",
 };
 
 const Typography = ({ variant, color, children, letterSpacing }) => {
