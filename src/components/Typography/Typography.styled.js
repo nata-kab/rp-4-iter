@@ -5,7 +5,7 @@ export const Typography = styled.p`
   text-align: center;
   ${({ variant, theme }) => theme.typography.desktop[variant]};
 
-  ${({ theme }) => theme.breakpoints.md} {
+  ${({ theme }) => theme.breakpoints.lg} {
     ${({ theme, variant }) => theme.typography.tablet[variant]}
   }
   ${({ theme }) => theme.breakpoints.sm} {

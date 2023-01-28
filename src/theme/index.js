@@ -26,27 +26,33 @@ const theme = {
     pink: {
       100: "#ff4967",
     },
+    green: {
+      100: "#a0c770",
+    },
+    yellow: {
+      100: "#ffa726",
+    },
   },
 
   typography: {
     desktop: {
       h1: {
         fontWeight: 500,
-        fontSize: "2.7rem",
-        lineHeight: "150%",
+        fontSize: "1.3rem",
+        lineHeight: "110%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "2.9rem",
+        fontSize: "1.4rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
 
       bodyMediumBold: {
-        fontWeight: 500,
-        fontSize: "2rem",
+        fontWeight: 700,
+        fontSize: "1.2rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
@@ -54,21 +60,21 @@ const theme = {
     tablet: {
       h1: {
         fontWeight: 500,
-        fontSize: "2.2rem",
+        fontSize: "1rem",
         lineHeight: "150%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "2.4rem",
+        fontSize: "1.1rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
 
       bodyMediumBold: {
-        fontWeight: 500,
-        fontSize: "1.9rem",
+        fontWeight: 700,
+        fontSize: "0.9rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
@@ -77,31 +83,30 @@ const theme = {
     mobile: {
       h1: {
         fontWeight: 500,
-        fontSize: "1.6rem",
+        fontSize: "0.8rem",
         lineHeight: "150%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "1.8rem",
+        fontSize: "0.9rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
       bodyMediumBold: {
-        fontWeight: 500,
-        fontSize: "1.3rem",
+        fontWeight: 700,
+        fontSize: "0.7rem",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
     },
   },
   breakpoints: getBreakpoints({
-    sm: 640,
-    md: 768,
-    lg: 1024,
-    xl: 1280,
-    xxl: 1536,
+    sm: 587,
+    md: 744,
+    lg: 992,
+    xl: 1200,
   }),
 };
 

@@ -1,17 +1,17 @@
-import { node, numb } from "prop-types";
+import { node, number } from "prop-types";
 import * as Styled from "./Container.styled";
 
-const Container = ({ size, children }) => (
-  <Styled.Container size={size}>{children}</Styled.Container>
+const Container = ({ maxWidth, children }) => (
+  <Styled.Container size={maxWidth}>{children}</Styled.Container>
 );
 
 Container.propTypes = {
-  size: numb,
+  maxWidth: number,
   children: node.isRequired,
 };
 
 Container.defaultProps = {
-  size: 1000,
+  maxWidth: 1200,
 };
 
 export default Container;

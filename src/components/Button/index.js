@@ -17,10 +17,10 @@ export default Button;
 
 Button.propTypes = {
   text: string.isRequired,
-  colorVariant: oneOf(["pink"]),
+  colorVariant: oneOf(["pink", "green", "yellow"]),
   onClick: func,
 };
 Button.defaultProps = {
-  colorVariant: "pink",
+  colorVariant: "green",
   onClick: null,
 };

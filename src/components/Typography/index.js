@@ -1,4 +1,4 @@
-import { string, oneOf } from "prop-types";
+import { string, oneOf, node, number, oneOfType } from "prop-types";
 import React from "react";
 
 import * as Styled from "./Typography.styled";
@@ -27,14 +27,15 @@ const Typography = ({ variant, color, children, letterSpacing }) => {
 Typography.propTypes = {
   variant: oneOf(Object.keys(variants)),
   color: string,
-  children: string,
-  letterSpacing: string,
+  children: oneOfType([string, node]),
+  letterSpacing: number,
 };
 
 Typography.defaultProps = {
   color: "black",
   variant: "bodyLarge",
   letterSpacing: null,
+  children: null,
 };
 
 export default Typography;

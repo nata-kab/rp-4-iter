@@ -2,11 +2,11 @@ import React from "react";
 import { string, node, func, oneOf } from "prop-types";
 import { useTheme } from "@emotion/react";
 
-import * as Styled from "./Card.styled";
+import * as Styled from "./MealCard.styled";
 import Typography from "../../components/Typography";
 import Button from "../../components/Button";
 
-const Card = ({
+const MealCard = ({
   imageSrc,
   imageAlt,
   title,
@@ -24,13 +24,17 @@ const Card = ({
       <Styled.Content>
         <Typography
           variant="h1"
-          color={theme.colors.pink[100]}
-          letterSpacing={0.1}
+          color={theme.colors[colorVariant][100]}
+          letterSpacing={0.06}
         >
           {title.toUpperCase()}
         </Typography>
-        <Typography variant="bodyLarge" color={theme.colors.blue[100]}>
-          {description}
+        <Typography
+          variant="bodyLarge"
+          color={theme.colors.blue[100]}
+          letterSpacing={0.01}
+        >
+          {description} Are fun and &#10; melts in your mouth thing!
         </Typography>
         <Button
           text={buttonText}
@@ -42,7 +46,7 @@ const Card = ({
   );
 };
 
-Card.propTypes = {
+MealCard.propTypes = {
   title: string.isRequired,
   description: string,
   children: node,
@@ -51,10 +55,10 @@ Card.propTypes = {
   imageAlt: string,
   imageSrc: string,
   buttonText: string,
-  colorVariant: oneOf(["pink"]),
+  colorVariant: oneOf(["pink", "green", "yellow"]),
 };
 
-Card.defaultProps = {
+MealCard.defaultProps = {
   children: null,
   colorVariant: "pink",
   description: null,
@@ -63,7 +67,7 @@ Card.defaultProps = {
   onClick: null,
   imageAlt: null,
   imageSrc:
-    "https://images.pexels.com/photos/551628/pexels-photo-551628.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "https://cdn.pixabay.com/photo/2017/03/31/18/02/strawberry-dessert-2191973_960_720.jpg",
 };
 
-export default Card;
+export default MealCard;
