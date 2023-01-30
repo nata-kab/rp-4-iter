@@ -43,8 +43,4 @@ export const Button = styled.a`
     padding: 1rem 1.5rem;
     margin: 0 0.5rem;
   }
-  ${({ theme }) => theme.breakpoints.sm} {
-    padding: 0.6rem 0.8rem;
-    margin: 0 0.04rem;
-  }
 `;

@@ -16,14 +16,16 @@ const MainPage = () => {
             title={item.title}
             imageSrc={item.imageSrc}
             imageAlt={item.imageAlt}
-            description={item.description}
+            description={
+              item.description + "Are fun and \n melts in your mouth thing!"
+            }
             colorVariant={item.colorVariant}
             button={
               <Button
                 text="Looks yummy, want some"
                 colorVariant={item.colorVariant}
                 textVariant="bodyMediumBold"
-                letterSpacing={-0.03}
+                letterSpacing={-0.04}
               />
             }
           />

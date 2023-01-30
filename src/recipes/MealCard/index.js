@@ -33,7 +33,7 @@ const MealCard = ({
           color={theme.colors.blue[100]}
           letterSpacing={0.01}
         >
-          {description} Are fun and melts in your mouth thing!
+          {description}
         </Typography>
         {button && button}
       </Styled.Content>

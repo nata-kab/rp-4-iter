@@ -8,9 +8,10 @@ export const Typography = styled.p`
   ${({ theme }) => theme.breakpoints.lg} {
     ${({ theme, variant }) => theme.typography.tablet[variant]}
   }
-  ${({ theme }) => theme.breakpoints.sm} {
+  ${({ theme }) => theme.breakpoints.md} {
     ${({ theme, variant }) => theme.typography.mobile[variant]}
   }
   color: ${({ color }) => color};
   letter-spacing: ${({ letterSpacing = "normal" }) => `${letterSpacing}em`};
+  white-space: pre-wrap;
 `;

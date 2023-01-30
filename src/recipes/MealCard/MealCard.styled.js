@@ -28,11 +28,11 @@ export const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   background-color: inherit;
-  padding: 2.5rem 2.2rem;
+  padding: 2.5rem 0.1rem;
   border-radius: 0 0 40px 40px;
   gap: 1.5rem;
   ${({ theme }) => theme.breakpoints.lg} {
-    padding: 1.4rem 1.3rem;
+    padding: 1.8rem 0.3rem;
     gap: 1.2rem;
   }
   ${({ theme }) => theme.breakpoints.md} {
