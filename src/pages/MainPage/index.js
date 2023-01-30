@@ -9,7 +9,7 @@ import Button from "../../components/Button";
 const MainPage = () => {
   return (
     <Styled.MainPage>
-      <Container maxWidth={1200}>
+      <Container>
         {mealCardData.map((item) => (
           <MealCard
             key={item.id}
@@ -32,7 +32,7 @@ const MainPage = () => {
         ))}
       </Container>
 
-      <Container maxWidth={1200}>
+      <Container>
         {cityCardData.map((item) => (
           <CityCard
             key={item.id}

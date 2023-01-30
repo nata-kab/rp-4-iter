@@ -112,38 +112,39 @@ const theme = {
     mobile: {
       h1: {
         fontWeight: 900,
-        fontSize: "calc(1.7rem + 1.5vw)",
+        fontSize: "calc(1.2rem + 3vw)",
         lineHeight: "140%",
         fontFamily: "Roboto",
       },
       h2: {
         fontWeight: 700,
-        fontSize: "calc(0.8rem + 1.5vw)",
+        fontSize: "calc(0.3rem + 3vw)",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "calc(0.83rem + 1.5vw)",
+        fontSize: "calc(0.2rem + 4vw)",
         lineHeight: "150%",
         fontFamily: "Roboto",
       },
       bodyLargeBold: {
         fontWeight: 900,
-        fontSize: "calc(0.6rem + 1.4vw)",
+        fontSize: "calc(0.3rem + 3vw)",
         lineHeight: "170%",
         fontFamily: "Roboto",
       },
       bodyMediumBold: {
         fontWeight: 700,
-        fontSize: "calc(0.7rem + 1.5vw)",
+        fontSize: "calc(0.3rem + 3vw)",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
     },
   },
   breakpoints: getBreakpoints({
+    xs: 290,
     sm: 587,
     md: 640,
     lg: 992,
