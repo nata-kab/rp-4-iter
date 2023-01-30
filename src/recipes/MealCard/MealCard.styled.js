@@ -30,10 +30,10 @@ export const Content = styled.div`
   background-color: inherit;
   padding: 2.5rem 0.1rem;
   border-radius: 0 0 40px 40px;
-  gap: 1.5rem;
+  gap: 1.2rem;
   ${({ theme }) => theme.breakpoints.lg} {
-    padding: 1.8rem 0.3rem;
-    gap: 1.2rem;
+    padding: 1.7rem 0.3rem;
+    gap: 1rem;
   }
   ${({ theme }) => theme.breakpoints.md} {
     gap: 1.7rem;

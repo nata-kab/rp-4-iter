@@ -43,33 +43,33 @@ const theme = {
     desktop: {
       h1: {
         fontWeight: 900,
-        fontSize: "calc(0.9rem + 1.2vw)",
+        fontSize: "calc(1.5rem + 0.7vw)",
         lineHeight: "140%",
         fontFamily: "Roboto",
       },
       h2: {
         fontWeight: 500,
-        fontSize: "calc(0.4rem + 1.1vw)",
+        fontSize: "calc(0.7rem + 0.5vw)",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "calc(0.45rem + 1.1vw)",
+        fontSize: "calc(0.85rem + 0.5vw)",
         lineHeight: "140%",
         fontFamily: "Roboto",
       },
       bodyLargeBold: {
-        fontWeight: 700,
-        fontSize: "calc(0.3rem + 1.1vw)",
-        lineHeight: "140%",
+        fontWeight: 900,
+        fontSize: "calc(0.6rem + 0.5vw)",
+        lineHeight: "160%",
         fontFamily: "Roboto",
       },
 
       bodyMediumBold: {
         fontWeight: 700,
-        fontSize: "calc(0.22rem + 1.1vw)",
+        fontSize: "calc(0.7rem + 0.4vw)",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
@@ -77,33 +77,33 @@ const theme = {
     tablet: {
       h1: {
         fontWeight: 900,
-        fontSize: "calc(1rem + 1.2vw)",
+        fontSize: "calc(0.8rem + 1.5vw)",
         lineHeight: "140%",
         fontFamily: "Roboto",
       },
       h2: {
         fontWeight: 500,
-        fontSize: "calc(0.42rem + 1.1vw)",
+        fontSize: "calc(0.22rem + 1.5vw)",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "calc(0.45rem + 1.1vw)",
+        fontSize: "calc(0.23rem + 1.5vw)",
         lineHeight: "140%",
         fontFamily: "Roboto",
       },
       bodyLargeBold: {
-        fontWeight: 700,
-        fontSize: "calc(0.3rem + 1.1vw)",
-        lineHeight: "140%",
+        fontWeight: 900,
+        fontSize: "calc(0.02rem + 1.5vw)",
+        lineHeight: "170%",
         fontFamily: "Roboto",
       },
 
       bodyMediumBold: {
         fontWeight: 700,
-        fontSize: "calc(0.15rem + 1.3vw)",
+        fontSize: "calc(0.1rem + 1.5vw)",
         lineHeight: "110%",
         fontFamily: "Roboto",
       },
@@ -111,13 +111,13 @@ const theme = {
 
     mobile: {
       h1: {
-        fontWeight: 500,
-        fontSize: "calc(1rem + 1.5vw)",
+        fontWeight: 900,
+        fontSize: "calc(1.5rem + 1.5vw)",
         lineHeight: "140%",
         fontFamily: "Roboto",
       },
       h2: {
-        fontWeight: 500,
+        fontWeight: 700,
         fontSize: "calc(0.8rem + 1.5vw)",
         lineHeight: "110%",
         fontFamily: "Roboto",
@@ -126,13 +126,13 @@ const theme = {
       bodyLarge: {
         fontWeight: 300,
         fontSize: "calc(0.85rem + 1.5vw)",
-        lineHeight: "140%",
+        lineHeight: "150%",
         fontFamily: "Roboto",
       },
       bodyLargeBold: {
-        fontWeight: 700,
-        fontSize: "calc(0.85rem + 1.5vw)",
-        lineHeight: "140%",
+        fontWeight: 900,
+        fontSize: "calc(0.7rem + 1.5vw)",
+        lineHeight: "170%",
         fontFamily: "Roboto",
       },
       bodyMediumBold: {
@@ -145,7 +145,7 @@ const theme = {
   },
   breakpoints: getBreakpoints({
     sm: 587,
-    md: 744,
+    md: 640,
     lg: 992,
     xl: 1200,
   }),

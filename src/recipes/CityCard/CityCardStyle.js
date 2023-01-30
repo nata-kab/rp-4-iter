@@ -5,8 +5,15 @@ export const Card = styled.div`
   border-radius: 40px;
   overflow: hidden;
   width: 100%;
+  max-height: calc(20rem + 5vw);
+  ${({ theme }) => theme.breakpoints.lg} {
+    height: calc(12rem + 8vw);
+  }
+  ${({ theme }) => theme.breakpoints.md} {
+    height: calc(24rem + 10vw);
+  }
   ${({ theme }) => theme.breakpoints.sm} {
-    height: 350px;
+    height: calc(20rem + 10vw);
   }
 `;
 
@@ -19,7 +26,7 @@ export const Image = styled.img`
 
 export const ButtonContainer = styled.div`
   position: absolute;
-  bottom: 7%;
+  bottom: 8%;
   z-index: 2;
   width: 100%;
   display: flex;
@@ -27,7 +34,7 @@ export const ButtonContainer = styled.div`
 `;
 export const TitleContainer = styled.div`
   position: absolute;
-  top: 7%;
-  right: 8%;
+  top: 8%;
+  right: 10%;
   z-index: 2;
 `;

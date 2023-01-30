@@ -44,7 +44,7 @@ const MainPage = () => {
                 text="DOWNLOAD ITINERARY"
                 colorVariant={item.colorVariant}
                 textVariant="bodyLargeBold"
-                letterSpacing={-0.01}
+                letterSpacing={0.03}
               />
             }
           />
