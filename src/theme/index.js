@@ -112,7 +112,7 @@ const theme = {
     mobile: {
       h1: {
         fontWeight: 900,
-        fontSize: "calc(1.5rem + 1.5vw)",
+        fontSize: "calc(1.7rem + 1.5vw)",
         lineHeight: "140%",
         fontFamily: "Roboto",
       },
@@ -125,13 +125,13 @@ const theme = {
 
       bodyLarge: {
         fontWeight: 300,
-        fontSize: "calc(0.85rem + 1.5vw)",
+        fontSize: "calc(0.83rem + 1.5vw)",
         lineHeight: "150%",
         fontFamily: "Roboto",
       },
       bodyLargeBold: {
         fontWeight: 900,
-        fontSize: "calc(0.7rem + 1.5vw)",
+        fontSize: "calc(0.6rem + 1.4vw)",
         lineHeight: "170%",
         fontFamily: "Roboto",
       },

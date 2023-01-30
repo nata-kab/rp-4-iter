@@ -2,7 +2,7 @@ import { node, number } from "prop-types";
 import * as Styled from "./Container.styled";
 
 const Container = ({ maxWidth, children }) => (
-  <Styled.Container maxWidth={maxWidth}>{children}</Styled.Container>
+  <Styled.Container>{children}</Styled.Container>
 );
 
 Container.propTypes = {

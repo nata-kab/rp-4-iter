@@ -37,5 +37,6 @@ export const Content = styled.div`
   }
   ${({ theme }) => theme.breakpoints.md} {
     gap: 1.7rem;
+    padding: 1.7rem 0.3rem;
   }
 `;
