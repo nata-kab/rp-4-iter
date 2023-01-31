@@ -9,8 +9,8 @@ https://www.dropbox.com/s/9vhz9dgaoh28keq/UI_Kit_Widgets.zip
 
 ## Comment
 
-During this exercise, I built the components as I would write them while working on a large project.
-Due to the lack of specific guidelines, I made the most responsive components so that they look good on as many devices as possible.
+During this exercise, I built the components as I would write them while working on a large project.<br/>
+Due to the lack of specific guidelines, I created components as responsive as possible so that they look good on as many devices as possible.
 
 ## Project structure
 
