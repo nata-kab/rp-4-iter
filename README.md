@@ -33,7 +33,7 @@ src/
 Clone the repo:
 
 ```bash
-git clone https://github.com/nata-kab/users-profiles-from-api.git
+git clone https://github.com/nata-kab/rp-4-iter.git
 ```
 
 and then:
