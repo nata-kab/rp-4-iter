@@ -12,7 +12,7 @@ During this exercise, I built the components as I would write them while working
 
 Due to the lack of specific guidelines, I created the components as responsive as possible to look good on as many devices as possible. I used a calculated rem with vw units to scale every time the user changes their preferred browser font size and at the same time make the layout fluid.
 
-# Demo
+## Demo
 
 You can find demo on this [site](https://exercise4nata.netlify.app/)
 
