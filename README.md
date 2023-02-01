@@ -27,7 +27,7 @@ git clone https://github.com/nata-kab/rp-4-iter.git
 and then:
 
 ```bash
-cd products-list-from-api
+cd rp-4-iter
 npm i
 ```
 
