@@ -8,7 +8,7 @@ Pick component designs from this repository.
 
 ## Comment
 
-During this exercise, I built the components as in a complex project.
+- During this exercise, I built the components as in a complex project.
 
 - Due to the lack of specific guidelines, I created the components as responsive as possible to look good on different screens and mobile devices.
 - I used calculated rem with vw units to scale every time the user changes their preferred browser font size. At the same time, this solution makes the layout fluid.
