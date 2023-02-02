@@ -8,9 +8,11 @@ Pick component designs from this repository.
 
 ## Comment
 
-During this exercise, I built the components as I would write them while working on a large project.
+During this exercise, I built the components as in a complex project.
 
-Due to the lack of specific guidelines, I created the components as responsive as possible to look good on as many devices as possible. I used a calculated rem with vw units to scale every time the user changes their preferred browser font size and at the same time make the layout fluid. I chose to use images instead of background images due to make images perceivable to customers with low vision or blind.
+- Due to the lack of specific guidelines, I created the components as responsive as possible to look good on different screens and mobile devices.
+- I used calculated rem with vw units to scale every time the user changes their preferred browser font size. At the same time, this solution makes the layout fluid.
+- I chose to use images instead of background images due to make images perceivable to customers with low vision or blind.
 
 ## Demo
 
@@ -18,15 +20,17 @@ You can find demo on this [site](https://exercise4nata.netlify.app/)
 
 ## Project structure
 
+Project structure is based on atomic design 2.0 methodology.
+
 ```
 src/
 ├── components
 ├── helpers
-├── pages
-├── recipes
+├── templates
+├── patterns
   ├── |CityCard
   └── |MailCard
-└──theme
+└──tokens
 
 ```
 

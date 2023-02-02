@@ -1,7 +1,7 @@
 import { ThemeProvider, Global, css } from "@emotion/react";
-import theme from "./theme";
+import theme from "./tokens/theme";
 import * as Styled from "./App.styled";
-import MainPage from "./pages/MainPage";
+import MainPage from "./templates/MainPage";
 
 function App() {
   return (

@@ -1,9 +1,9 @@
-import MealCard from "../../recipes/MealCard";
+import MealCard from "../../patterns/MealCard";
 import * as Styled from "./MainPage.styled";
 import Container from "../../components/Container";
 import mealCardData from "../../helpers/mealCardData";
 import cityCardData from "../../helpers/cityCardData";
-import CityCard from "../../recipes/CityCard";
+import CityCard from "../../patterns/CityCard";
 import Button from "../../components/Button";
 
 const MainPage = () => {
